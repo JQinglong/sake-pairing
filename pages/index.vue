@@ -1,6 +1,6 @@
 <template>
   <v-card>
-    <v-card-title class="headline"> 今日の「日本酒に合う」</v-card-title>
+    <v-card-title class="headline"> 今の季節の「日本酒に合う」</v-card-title>
     <v-card-text>
       <wordcloud
         :data="tweetword"
