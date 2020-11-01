@@ -11,7 +11,7 @@
     </v-card-text>
     <v-card-text>
       <v-row>
-        <v-col v-for="tweet in tweets" :key="tweet.id" cols="2">
+        <v-col v-for="tweet in tweets" :key="tweet.id" sm="6" md="4" lg="3">
           <v-hover>
             <template v-slot:default="{ hover }">
               <v-card>
