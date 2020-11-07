@@ -54,7 +54,16 @@ export default {
     ],
     tweets: null,
     hover: false,
+    title: '日本酒に合う'
   }),
+  head () {
+    return {
+      title: this.title,
+      meta: [
+        { hid: 'description', name: 'description', content: 'description' }
+      ]
+    }
+  },
   mounted() {
     const pairing_url =
       "https://us-central1-jq-apps-1568264503782.cloudfunctions.net/sake-pairing-api";
